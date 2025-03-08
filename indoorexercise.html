@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Exercises</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #fff;
+        }
+        .exercise {
+            margin: 20px 0;
+            padding: 15px;
+            background: #000000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .exercise:hover {
+            transform: scale(1.05);
+        }
+        .exercise img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .home-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+    </style>
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Indoor Exercises</h1>
+        
+        <a href="home.html" class="home-button">Home</a>
+        
+        <div class="exercise" onclick="redirectTo('plank.html')">
+            <h2>Plank</h2>
+            <p>Strengthens core muscles and improves posture.</p>
+            <img src="plank.jpg" alt="Plank">
+        </div>
+        
+        <div class="exercise" onclick="redirectTo('pushup.html')">
+            <h2>Push Up</h2>
+            <p>Builds upper body strength and endurance.</p>
+            <img src="pushup.jpg" alt="Push Up">
+        </div>
+        
+        <div class="exercise" onclick="redirectTo('squat.html')">
+            <h2>Squat</h2>
+            <p>Improves leg strength and flexibility.</p>
+            <img src="squat.jpg" alt="Squat">
+        </div>
+        
+        <div class="exercise" onclick="redirectTo('yoga.html')">
+            <h2>Yoga</h2>
+            <p>Enhances flexibility, balance, and mental well-being.</p>
+            <img src="yoga.jpg" alt="Yoga">
+        </div>
+    </div>
+</body>
+</html>
